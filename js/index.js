@@ -1,3 +1,4 @@
+const no;
 const mainPage = document.getElementById("mainPage");
 const addingPage = document.getElementById("addingPage");
 const showLiInfo = document.getElementById("showLiInfo");
