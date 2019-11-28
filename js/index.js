@@ -1,4 +1,3 @@
-const no;
 const mainPage = document.getElementById("mainPage");
 const addingPage = document.getElementById("addingPage");
 const showLiInfo = document.getElementById("showLiInfo");
@@ -52,7 +51,7 @@ function addingToTheList() {
     list.appendChild(item);
     item.appendChild(btnDelete);
     document.getElementById("input1").value = "";
-    btnDelete.addEventListener('click', Delete);
+    btnDelete.addEventListener("click", Delete);
     // item.addEventListener("click", showLi);
     // btnDelete.addEventListener("click", remove);
   }
@@ -88,7 +87,6 @@ function showLi(event) {
   console.log(event);
   var text = event.target.innerText;
   var textShow = (document.getElementById("nameOfLi").innerHTML = text);
-  
 
   // event.target.
 }
@@ -97,6 +95,5 @@ function Delete(event) {
   let list = this.parentNode.parentNode;
   let item = this.parentNode;
   list.removeChild(item);
-
 }
 initialize();
